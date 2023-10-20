@@ -1,7 +1,7 @@
 cc_binary(
-    name = "hello_world",  # Name of the output binary
-    srcs = ["test.c"],  # Source file containing your C code
+    name = "hello_world",  
+    srcs = ["test.c"],  
     visibility = ["//visibility:public"],
-    copts = ["-std=c90"],  # Optional: Set C standard, e.g., C99
+    copts = ["-std=C90"],  # C standard, e.g., C90
     toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # Specify GCC toolchain
 )

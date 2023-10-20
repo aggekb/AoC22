@@ -1,0 +1,7 @@
+cc_binary(
+    name = "part1",  # Name of the output binary
+    srcs = ["part1.c"],  # Source file 
+    visibility = ["//visibility:public"],
+    copts = ["-std=c90"],  #  C90 
+    toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
+)
