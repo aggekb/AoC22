@@ -5,3 +5,11 @@ cc_binary(
     copts = ["-std=c90"],  #  C90 
     toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
 )
+
+cc_binary(
+    name = "part2",  # Name of the output binary
+    srcs = ["part2.c"],  # Source file 
+    visibility = ["//visibility:public"],
+    copts = ["-std=c90"],  # C90
+    toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
+)
