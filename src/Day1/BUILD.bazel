@@ -1,15 +1,15 @@
 cc_binary(
-    name = "part1",  # Name of the output binary
-    srcs = ["part1.c"],  # Source file 
+    name = "D1P1",  # Name of the output binary
+    srcs = ["D1P1.c"],  # Source file 
     visibility = ["//visibility:public"],
-    copts = ["-std=c90"],  #  C90 
+    copts = ["-std=c89"],  #  C90 
     toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
 )
 
 cc_binary(
-    name = "part2",  # Name of the output binary
-    srcs = ["part2.c"],  # Source file 
+    name = "D1P2",  # Name of the output binary
+    srcs = ["D1P2.c"],  # Source file 
     visibility = ["//visibility:public"],
-    copts = ["-std=c90"],  # C90
+    copts = ["-std=c89"],  # C90
     toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
 )

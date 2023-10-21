@@ -1,0 +1,15 @@
+cc_binary(
+    name = "D2P1",  # Name of the output binary
+    srcs = ["D2P1.c"],  # Source file 
+    visibility = ["//visibility:public"],
+    copts = ["-std=c89"],  #  C90 
+    toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
+)
+
+cc_binary(
+    name = "D2P2",  # Name of the output binary
+    srcs = ["D2P2.c"],  # Source file 
+    visibility = ["//visibility:public"],
+    copts = ["-std=c89"],  # C90
+    toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
+)
