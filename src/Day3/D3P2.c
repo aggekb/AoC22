@@ -53,7 +53,7 @@ int main() {
     /* Close the file */
     fclose(filepointer);
 
-    /* Print the saved strings */
+    /* Find the common item and assign priority */
     for (i = 0; i < currentGroup; i++) {
         strcpy(comp1, groupSets[i][0]);
         strcpy(comp2, groupSets[i][1]);
@@ -70,7 +70,7 @@ int main() {
                         if (comp1[j] == comp3[z] && comp2[y] == comp3[z]) {
                             /* Store the common character in equalItem */
                             equalItem = comp1[j];
-                            /* Asign priority to common character */
+                            /* Assign priority to common character */
                             for (x = 0; x < ALPHABET_LENGTH; x++){
                                 if (equalItem == ALPHABET[x]){
                                     x++;
