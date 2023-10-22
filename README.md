@@ -1,1 +1,2 @@
-# Advent of Code 2022 in C.
+# Advent of Code 2022
+In C, built using Bazel.
