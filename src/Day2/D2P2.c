@@ -11,7 +11,6 @@ int main() {
     int i = 0;
     char c;
     char roundEnd;
-    char myDraw;
     char opDraw;
     int drawPoint = 0;
     int roundPoint = 0;
@@ -19,7 +18,7 @@ int main() {
 
     /* Create file pointer and open file */
     FILE *filepointer;
-    filepointer = fopen("/Users/agatonoberg/Desktop/Git/AoC22/src/Day2/data.txt", "r");
+    filepointer = fopen("src/Day2/data.txt", "r");
 
     /* Check if the file was read correctly */
     if (filepointer == NULL) {

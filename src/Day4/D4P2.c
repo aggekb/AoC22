@@ -8,7 +8,7 @@ int main(){
 
     /* Create filepointer and read file */
     FILE * filepointer; 
-    filepointer = fopen("/Users/agatonoberg/Desktop/Git/AoC22/src/Day4/data.txt","r");
+    filepointer = fopen("src/Day4/data.txt","r");
 
     /* Check if file was read correctly */
     if (filepointer == NULL) {

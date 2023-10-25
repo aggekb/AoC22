@@ -4,6 +4,7 @@ cc_binary(
     visibility = ["//visibility:public"],
     copts = ["-std=c89"],  #  C90 
     toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
+    data = ["data.txt"],  # Include "data.txt" as data dependency
 )
 
 cc_binary(
@@ -12,4 +13,5 @@ cc_binary(
     visibility = ["//visibility:public"],
     copts = ["-std=c89"],  # C90
     toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
+     data = ["data.txt"],  # Include "data.txt" as data dependency
 )

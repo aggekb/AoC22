@@ -21,7 +21,7 @@ int main() {
 
     /* Create file pointer and open file*/
     FILE * filepointer;
-    filepointer = fopen("/Users/agatonoberg/Desktop/Git/AoC22/src/Day1/data.txt","r");
+    filepointer = fopen("src/Day1/data.txt","r");
     
     /* Check if file was read correctly */
     if (filepointer == NULL) {
