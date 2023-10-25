@@ -1,7 +1,0 @@
-cc_binary(
-    name = "hello_world",  
-    srcs = ["test.c"],  
-    visibility = ["//visibility:public"],
-    copts = ["-std=C90"],  # C standard, e.g., C90
-    toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # Specify GCC toolchain
-)
