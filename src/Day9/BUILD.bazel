@@ -1,0 +1,17 @@
+cc_binary(
+    name = "D9P1",  # Name of the output binary
+    srcs = ["D9P1.c"],  # Source file 
+    visibility = ["//visibility:public"],
+    copts = ["-std=c89"],  #  C89 
+    toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
+    data = ["data.txt", "testdata.txt"],  # Include "data.txt" as data dependency
+)
+
+cc_binary(
+    name = "D9P2",  # Name of the output binary
+    srcs = ["D9P2.c"],  # Source file 
+    visibility = ["//visibility:public"],
+    copts = ["-std=c89"],  # C89
+    toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # GCC toolchain
+    data = ["data.txt", 'testdata.txt'],  # Include "data.txt" as data dependency
+)

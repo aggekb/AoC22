@@ -33,3 +33,5 @@ eclipse-*bin/
 .bazelversion
 # User-specific .bazelrc
 user.bazelrc
+# Ignore test file 
+test_D10P1
