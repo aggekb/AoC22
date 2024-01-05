@@ -13,11 +13,11 @@ bazel run src/Day6:D6P2
 
 
 # Unity test for Day 10 Part 1
-Compile the files with the Unity testing framework, outputs an executable file:
+Compile the files with the Unity testing framework, outputs testfile:
 ```bash
 gcc -o test_D10P1 test/D10P1UT.c test/TestD10P1UT.c unity/src/unity.c -Isrc/Day10 -Iunity/src  
 ```
-Run the executable file:
+Run the testfile:
 ```bash
 ./test_D10P1
 ```                                                                                                                                                                                                                                                                                                                                                     
