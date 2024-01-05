@@ -1,12 +1,12 @@
 # Advent of Code 2022
 Day 1-10 in C, built using Bazel. 
 
-To run build and run the files:
+To build and run the files:
 ```bash
 bazel run src/DayX:DXPY
 ```
 
-For instance, execute Day 6 Part 2 with: 
+Example: Run Day 6 Part 2 with: 
 ```bash
 bazel run src/Day6:D6P2
 ```
